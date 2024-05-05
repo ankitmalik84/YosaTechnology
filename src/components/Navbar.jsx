@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
 import { Link } from "react-scroll";
@@ -7,6 +6,7 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
+  const [hovered, setHovered] = useState(null);
 
   return (
     <nav
@@ -25,9 +25,29 @@ const Navbar = () => {
             className={`font-poppins font-normal cursor-pointer text-[16px] ${
               active === nav.title ? "text-white" : "text-dimWhite"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
-            onClick={() => setActive(nav.title)}
+            onMouseEnter={() => setHovered(nav.title)}
+            onMouseLeave={() => setHovered(null)}
           >
             <Link to={`${nav.id}`}>{nav.title}</Link>
+            {hovered === nav.title && nav.links.length > 0 && (
+              <div
+                className={`absolute top-full ${
+                  nav.title === "Why Choose Us" ? "right-90" : "right-50"
+                } mt-[-28px] p-3 bg-black-gradient rounded-xl sidebar`}
+              >
+                <ul className="list-none flex justify-start items-start flex-1 flex-col">
+                  {nav.links.map((item, index) => (
+                    <li
+                      key={item.id}
+                      className={`font-poppins font-medium cursor-pointer text-[18px] text-white`}
+                      onClick={() => setActive(item.title)}
+                    >
+                      <Link to={`${item.id}`}>{item.title}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </li>
         ))}
       </ul>

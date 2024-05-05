@@ -20,22 +20,57 @@ export const navLinks = [
   {
     id: "home",
     title: "Home",
+    links: [],
   },
   {
-    id: "About",
-    title: "About us",
+    id: "why-choose-us",
+    title: "Why Choose Us",
+    links: [
+      {
+        id: "aboutus",
+        title: "About Us",
+      },
+      {
+        id: "testimonials",
+        title: "Testimonials",
+      },
+      {
+        id: "privacy",
+        title: "Privacy",
+      },
+      {
+        id: "articles",
+        title: "Articles",
+      },
+    ],
   },
   {
-    id: "team",
-    title: "Team",
+    id: "services",
+    title: "Services",
+    links: [
+      {
+        id: "solutions",
+        title: "YosaTechnology Solutions",
+      },
+      {
+        id: "medicaltranscription",
+        title: "Medical Transcription Service",
+      },
+      {
+        id: "medicalbilling",
+        title: "Medical Billing and Coding",
+      },
+    ],
   },
   {
-    id: "Timeline",
-    title: "Timeline",
+    id: "contactus",
+    title: "Contact Us",
+    links: [],
   },
   {
     id: "faq",
-    title: "FAQ",
+    title: "FAQs",
+    links: [],
   },
 ];
 
