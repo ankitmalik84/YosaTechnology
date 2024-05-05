@@ -6,6 +6,7 @@ import coinbase from "./coinbase.png";
 import dropbox from "./dropbox.png";
 import logo from "./logo1.png";
 import logo1 from "./logo.jpg";
+import logo2 from "./logo2.png";
 import favLogo from "./fav-logo.png";
 import aboutImage from "./about.png";
 import quotes from "./quotes.svg";
@@ -40,6 +41,7 @@ export {
   tShirt,
   logo,
   logo1,
+  logo2,
   quotes,
   robot,
   send,
