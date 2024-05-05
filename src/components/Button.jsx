@@ -8,7 +8,7 @@ const Button = ({ styles, text, link }) => (
     href={link}
     target="_blank"
     type="button"
-    className={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none ${styles} shadow-md shadow-sky-500 `}
+    className={`py-3 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none ${styles} shadow-md shadow-sky-500 `}
   >
     {text}
   </a>
