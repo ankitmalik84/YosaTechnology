@@ -190,12 +190,12 @@ export const socialMedia = [
   {
     id: "social-media-1",
     icon: instagram,
-    link: "https://www.instagram.com/fetch.ai_developers_meerut/",
+    link: "",
   },
   {
     id: "social-media-2",
     icon: linkedin,
-    link: "https://www.linkedin.com/company/fetch-ai-meerut",
+    link: "",
   },
 ];
 
