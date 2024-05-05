@@ -5,6 +5,7 @@ import card from "./card.png";
 import coinbase from "./coinbase.png";
 import dropbox from "./dropbox.png";
 import logo from "./logo1.png";
+import logo1 from "./logo.jpg";
 import favLogo from "./fav-logo.png";
 import aboutImage from "./about.png";
 import quotes from "./quotes.svg";
@@ -38,6 +39,7 @@ export {
   dropbox,
   tShirt,
   logo,
+  logo1,
   quotes,
   robot,
   send,
