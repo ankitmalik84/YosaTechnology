@@ -15,7 +15,8 @@ const Navbar = () => {
       data-aos-duration="500"
       data-aos-easing="ease-in-out"
     >
-      <img src={logo} alt="yosatechnology" className="w-[124px] h-[40px]" />
+      <img src={logo} alt="yosatechnology" className="w-[194px] h-[40px]" />
+      <h1>Yosa Technology</h1>
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
