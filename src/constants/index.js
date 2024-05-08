@@ -176,32 +176,23 @@ export const footerLinks = [
     title: "India Office",
     links: [
       {
-        name: "A141, Sector 02",
+        name: "402, Piramyd Icon",
         link: "",
       },
       {
-        name: "Noida, India",
+        name: "Shreeji Nagri Rd/Ugat Rd",
         link: "",
       },
       {
-        name: "Pin - 201301",
-        link: "",
-      },
-    ],
-  },
-  {
-    title: "USA Office",
-    links: [
-      {
-        name: "51 p Wacker Dr",
+        name: "Jakeriya Circle LP Savani, Rd to",
         link: "",
       },
       {
-        name: "Chicago, IL 60606",
+        name: "Jahangirabad, Palanpur Jakatnaka",
         link: "",
       },
       {
-        name: "United States",
+        name: "Surat, Gujarat 395005",
         link: "",
       },
     ],
