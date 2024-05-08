@@ -29,7 +29,7 @@ const Mentor = () => {
             data-aos-duration="500"
             data-aos-easing="ease-in-out"
           >
-            About Our Leadings
+            Meet Our Leadership Team
           </span>
         </h1>
         <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
