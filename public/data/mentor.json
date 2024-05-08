@@ -1,17 +1,9 @@
 [
   {
     "id": 1,
-    "name": "Martin Xiu",
-    "role": "Chief Executive Officer and Board Member",
-    "avatar": "./assets/mentor/m1.jpg",
-    "linkedin": "https://www.linkedin.com/in/anupg-learn4tarakki/"
-  },
-
-  {
-    "id": 2,
-    "name": "Rahul Soni",
-    "role": "India Operations Heads",
-    "avatar": "./assets/mentor/m2.png",
-    "linkedin": "https://www.linkedin.com/in/jagdishpandya/"
+    "name": "Lee Rivas",
+    "role": "Chief Executive Officer",
+    "avatar": "./assets/mentor/m1.png",
+    "linkedin": ""
   }
 ]
