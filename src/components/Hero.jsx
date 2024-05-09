@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className={`flex md:flex-row flex-col ${styles.paddingY}`}
+      className={`flex md:flex-row flex-col ${styles.paddingY} z-0`}
     >
       <div
         className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
@@ -51,21 +51,21 @@ const Hero = () => {
       </div>
 
       <div
-        className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
+        className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative z-[0]`}
       >
         <img
           src={fetch}
           alt="billing"
-          className="w-[100%] h-[100%] relative z-[5]"
+          className="w-[100%] h-[100%] relative"
           data-aos="zoom-in"
           data-aos-duration="500"
           data-aos-easing="ease-in-out"
         />
 
         {/* gradient start */}
-        <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
+        {/* <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
         <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
-        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
+        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" /> */}
         {/* gradient end */}
       </div>
     </section>
