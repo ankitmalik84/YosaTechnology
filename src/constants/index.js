@@ -20,12 +20,12 @@ export const navLinks = [
   {
     id: "home",
     title: "Home",
-    links: [],
+    sublinks: [],
   },
   {
     id: "why-choose-us",
     title: "Why Choose Us",
-    links: [
+    sublinks: [
       {
         id: "aboutus",
         title: "About Us",
@@ -47,7 +47,7 @@ export const navLinks = [
   {
     id: "services",
     title: "Services",
-    links: [
+    sublinks: [
       {
         id: "solutions",
         title: "YosaTechnology Solutions",
@@ -65,12 +65,12 @@ export const navLinks = [
   {
     id: "contactus",
     title: "Contact Us",
-    links: [],
+    sublinks: [],
   },
   {
     id: "faq",
     title: "FAQs",
-    links: [],
+    sublinks: [],
   },
 ];
 
