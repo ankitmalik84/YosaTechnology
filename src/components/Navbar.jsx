@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="w-full flex py-6 justify-between items-center navbar relative z-10" // Add relative positioning and z-index
+      className="w-full flex py-6 justify-between items-center navbar relative z-10"
       data-aos="slide-down"
       data-aos-duration="500"
       data-aos-easing="ease-in-out"
@@ -26,14 +26,13 @@ const Navbar = () => {
               active === nav.title ? "text-white" : "text-dimWhite"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onMouseEnter={() => setHovered(nav.title)}
-            // onMouseLeave={() => setHovered(null)}
           >
             <Link to={`${nav.id}`}>{nav.title}</Link>
             {hovered === nav.title && nav.sublinks.length > 0 && (
               <div
                 className={`absolute top-full ${
                   nav.title === "Why Choose Us" ? "right-90" : "right-50"
-                } mt-[-28px] p-3 bg-black-gradient rounded-xl sidebar z-20`} // Add higher z-index
+                } mt-[-28px] p-3 bg-black-gradient rounded-xl sidebar z-20`}
                 onMouseEnter={() => setHovered(nav.title)}
                 onMouseLeave={() => setHovered(null)}
               >
@@ -44,7 +43,6 @@ const Navbar = () => {
                       className={` font-poppins font-medium cursor-pointer text-[18px] text-white`}
                       onClick={() => setActive(item.title)}
                     >
-                      {/* <Link to={`${item.id}`}>{item.title}</Link> */}
                       <a href={`#${item.id}`}>{item.title}</a>
                     </li>
                   ))}
