@@ -11,7 +11,7 @@ import {
   Timer,
 } from "./components";
 import AOS from "aos";
-import { AboutPage } from "./pages";
+import { AboutPage, HomePage } from "./pages";
 import "aos/dist/aos.css";
 const App = () => {
   AOS.init();
@@ -23,26 +23,15 @@ const App = () => {
             <Navbar />
           </div>
         </div>
-
-        <div className={`bg-primary ${styles.flexStart}`}>
-          <div className={`${styles.boxWidth}`}>
-            <Hero />
-          </div>
-        </div>
-
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/aboutPage" element={<AboutPage />} />
+        </Routes>
         <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
-            <AboutUs />
-            <Services />
-            <Timer />
-            <Mentor />
-            <FAQ />
             <Footer />
           </div>
         </div>
-        <Routes>
-          <Route path="/aboutpage" element={<AboutPage />} />
-        </Routes>
       </Router>
     </div>
   );
