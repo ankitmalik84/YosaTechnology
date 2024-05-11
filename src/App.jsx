@@ -11,7 +11,7 @@ import {
   Timer,
 } from "./components";
 import AOS from "aos";
-
+import { AboutPage } from "./pages";
 import "aos/dist/aos.css";
 const App = () => {
   AOS.init();
@@ -41,7 +41,7 @@ const App = () => {
           </div>
         </div>
         <Routes>
-          <Route path="/" element="" />
+          <Route path="/aboutpage" element={<AboutPage />} />
         </Routes>
       </Router>
     </div>

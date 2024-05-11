@@ -1,13 +1,7 @@
-import { apple, bill, google, aboutImage } from "../assets";
+import { aboutImage } from "../assets";
 import styles, { layout } from "../style";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faPhone,
-  faAngleUp,
-  faScrewdriverWrench,
-  faCircleCheck,
-  faCalendarCheck,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import "./AboutUs.css";
 
 const AboutUs = () => (
