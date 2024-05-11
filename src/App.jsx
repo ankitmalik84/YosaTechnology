@@ -2,24 +2,17 @@ import styles from "./style";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
   AboutUs,
-  Participat,
   Footer,
   Navbar,
-  Sponser,
   Hero,
   Services,
-  Team,
   Mentor,
   FAQ,
   Timer,
-  TimelineSection,
 } from "./components";
 import AOS from "aos";
 
 import "aos/dist/aos.css";
-import Community from "./components/Community";
-import Faculty from "./components/Faculty";
-
 const App = () => {
   AOS.init();
   return (
@@ -40,15 +33,9 @@ const App = () => {
         <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
             <AboutUs />
-            {/* <Participat /> */}
             <Services />
-            {/* <TimelineSection /> */}
             <Timer />
-            {/* <Faculty /> */}
-            {/* <Team /> */}
             <Mentor />
-            {/* <Sponser /> */}
-            {/* <Community /> */}
             <FAQ />
             <Footer />
           </div>
