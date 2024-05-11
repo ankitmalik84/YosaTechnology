@@ -7,9 +7,6 @@ import {
   HomePage,
   ContactPage,
   Faq,
-  Article1,
-  Articles,
-  Article2,
   MedicalBilling,
   Transcription,
   Privacy,
@@ -34,9 +31,6 @@ const App = () => {
           <Route path="/testimonials" element={<Testimonial />} />
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/privacy" element={<Privacy />} />
-          <Route path="/articles" element={<Articles />} />
-          <Route path="/article1" element={<Article1 />} />
-          <Route path="/article2" element={<Article2 />} />
           <Route path="/faqs" element={<Faq />} />
           <Route path="/transcription" element={<Transcription />} />
           <Route path="/medicalbilling" element={<MedicalBilling />} />
