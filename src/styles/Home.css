@@ -1,0 +1,59 @@
+.home-content-table {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  padding: 10px;
+}
+.home-content-table-row {
+  display: flex;
+}
+.home-content-table-col1 {
+  padding: 20px;
+}
+.home-content-table-col2 {
+  padding: 20px;
+}
+.home-services-card-cover {
+  margin: 24px 22px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  .info-card-title {
+    margin: 12px 0 10px 20px;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 700px) {
+  .home-content-table {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    padding: 10px;
+  }
+  .home-content-table-row {
+    flex-direction: column;
+  }
+  .home-content-table-col1 {
+    padding: 5px;
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .home-content-table-col2 {
+    padding: 5px;
+    h2 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .home-services-card-cover {
+    margin: 44px 12px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

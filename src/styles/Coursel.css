@@ -1,0 +1,101 @@
+/* Coursel.css */
+.clients {
+  background-color: aliceblue;
+}
+
+.clients-list {
+  height: 300px; /* Decreased height */
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin: 0 -15px;
+  padding: 25px;
+  padding-bottom: 25px;
+  overflow-x: hidden; /* Changed to hidden */
+  scroll-behavior: smooth;
+  list-style-type: none; /* Remove default list styles */
+}
+
+.clients-item {
+  flex: 0 0 auto; /* Added flex properties */
+  scroll-snap-align: start;
+  padding: 0 10px; /* Decreased padding */
+}
+
+.clients-item img {
+  width: 280px; /* Removed width: 365px */
+  height: 150px;
+}
+
+.list-title-content {
+  font-size: 14px;
+  line-height: 36px;
+  letter-spacing: 0.5em;
+  font-weight: bolder;
+  text-align: center;
+  padding: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+.list-title {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.list-title > span {
+  position: relative;
+}
+
+.list-title span::before {
+  content: "";
+  position: absolute;
+  width: 64%;
+  height: 4px;
+  background-color: #9d2553;
+  border-radius: 8px;
+  left: 0;
+  bottom: -12px;
+}
+
+.clients-item img:hover {
+  filter: brightness(100%);
+  transform: translateY(-5px);
+}
+
+.has-scrollbar::-webkit-scrollbar {
+  width: 5px; /* for vertical scrollbar */
+  height: 12px; /* for horizontal scrollbar */
+}
+
+.has-scrollbar::-webkit-scrollbar-track {
+  background: rgb(177, 177, 177) 1;
+  border-radius: 7px;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  background: #0bb2ff;
+  border-radius: 5px;
+}
+
+.has-scrollbar::-webkit-scrollbar-button {
+  width: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .list-title {
+    font-size: 30px;
+    letter-spacing: 0.8px;
+  }
+  .clients-list {
+    height: 150px; /* Adjusted height */
+  }
+  .clients-item {
+    min-width: 50%; /* Show two icons at a time */
+  }
+
+  .clients-item img {
+    width: 180px; /* Removed width: 365px */
+    height: 95px;
+  }
+}

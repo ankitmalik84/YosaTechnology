@@ -1,4 +1,5 @@
 import styles from "../style";
+import "../styles/Home.css";
 import { AboutUs, Hero, Services, Mentor, FAQ, Timer } from "../components";
 const HomePage = () => (
   <div>

@@ -1,0 +1,62 @@
+/* Text */
+.ab-head-content {
+  width: 100%;
+  padding: 10px;
+  padding-left: 32px;
+  /* background-color: aliceblue; */
+  position: relative;
+}
+.ab-title {
+  /* font-family: "Poppins", sans-serif; */
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  color: #06aaf5;
+}
+.ab-title > span {
+  position: relative;
+}
+.ab-title span::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 4px;
+  background-color: #9d2553;
+  border-radius: 8px;
+  left: 0;
+  bottom: -12px;
+}
+/* Checks */
+.ab-checks {
+  margin: 28px 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  color: #858585;
+}
+.ab-check-first {
+  margin-top: 40px;
+}
+.ab-check-last {
+  margin-bottom: 40px;
+}
+/* AboutUs.css */
+.particle-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Place the particle animation behind other content */
+}
+.animation-css {
+  position: relative;
+  z-index: -1;
+}
+/* Responsive */
+@media screen and (max-width: 1000px) {
+  .ab-text-content {
+    width: 100%;
+  }
+}

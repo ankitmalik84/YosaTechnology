@@ -1,24 +1,28 @@
 import styles from "./style";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import {
-  AboutUs,
-  Footer,
-  Navbar,
-  Hero,
-  Services,
-  Mentor,
-  FAQ,
-  Timer,
-} from "./components";
+import { Footer, Navbar } from "./components";
 import AOS from "aos";
-import { AboutPage, HomePage } from "./pages";
+import {
+  AboutPage,
+  HomePage,
+  ContactPage,
+  Faq,
+  Article1,
+  Articles,
+  Article2,
+  MedicalBilling,
+  Transcription,
+  Privacy,
+  Solutions,
+  Testimonial,
+} from "./pages";
 import "aos/dist/aos.css";
 const App = () => {
   AOS.init();
   return (
-    <div className="bg-primary w-full overflow-hidden">
+    <div className=" w-full overflow-hidden">
       <Router basename="/">
-        <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>
             <Navbar />
           </div>
@@ -26,6 +30,16 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/aboutPage" element={<AboutPage />} />
+          <Route path="/contactPage" element={<ContactPage />} />
+          <Route path="/testimonials" element={<Testimonial />} />
+          <Route path="/solutions" element={<Solutions />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/articles" element={<Articles />} />
+          <Route path="/article1" element={<Article1 />} />
+          <Route path="/article2" element={<Article2 />} />
+          <Route path="/faqs" element={<Faq />} />
+          <Route path="/transcription" element={<Transcription />} />
+          <Route path="/medicalbilling" element={<MedicalBilling />} />
         </Routes>
         <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
           <div className={`${styles.boxWidth}`}>

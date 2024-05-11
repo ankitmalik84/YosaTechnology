@@ -1,0 +1,280 @@
+.medical-cover {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.medical-head {
+  color: #ffffff;
+  background-color: #000000;
+  letter-spacing: 0.8px;
+  padding: 10px 30px 20px 30px;
+}
+.medical-heading {
+  margin: 0;
+  font-size: 36px;
+}
+.medical-first {
+  display: flex;
+  width: 100%;
+}
+.medical-first-img {
+  width: 38%;
+  height: 100%;
+  margin: 0;
+  padding-left: 30px;
+}
+.medical-first-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 20px 0 0 0;
+}
+.medical-first-content {
+  width: 100%;
+  margin: 0;
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+.medical-second {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.medical-second-img {
+  width: 50%;
+  height: 50%;
+  margin: 0;
+  padding-right: 30px;
+}
+.medical-second-img img {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 20px 0 0 0;
+}
+.medical-second-content {
+  width: 100%;
+  margin: 0;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.medical-third {
+  background-color: #40c7d6;
+  padding: 30px;
+  h2 {
+    margin: 0;
+    font-size: 32px;
+  }
+  p {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    line-height: 1.5rem;
+  }
+}
+.medical-third-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  letter-spacing: 0.8px;
+  line-height: 2.8rem;
+}
+.medical-fourth {
+  color: #ffffff;
+  padding: 30px;
+  background-color: #000000;
+  h2 {
+    margin: 0;
+    font-size: 32px;
+  }
+  p {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    line-height: 1.5rem;
+  }
+}
+.medical-fourth-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  letter-spacing: 0.8px;
+  line-height: 2.8rem;
+}
+.medical-fifth {
+  padding: 30px;
+  background-color: #40c7d6;
+  h2 {
+    margin: 0;
+    font-size: 32px;
+  }
+  p {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    line-height: 1.8rem;
+  }
+  ul {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    h3 {
+      margin: 0;
+      font-size: 20px;
+      padding-top: 5px;
+      padding-bottom: 10px;
+    }
+  }
+}
+.medical-sixth {
+  color: #ffffff;
+  padding: 30px;
+  background-color: #000000;
+  h2 {
+    margin: 0;
+    font-size: 30px;
+  }
+  p {
+    margin-top: 10px;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    line-height: 1.5rem;
+  }
+}
+/* Responsive */
+@media screen and (max-width: 700px) {
+  .medical-head {
+    letter-spacing: 0.3px;
+    padding: 15px 10px 5px 10px;
+  }
+  .medical-heading {
+    margin: 0;
+    font-size: 26px;
+  }
+  .medical-first-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px 0 0 0;
+  }
+  .medical-first {
+    flex-direction: column;
+  }
+  .medical-first-img {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .medical-first-content {
+    width: 100%;
+    padding-left: 10px;
+  }
+  .medical-second {
+    flex-direction: column;
+  }
+  .medical-second-img {
+    width: 100%;
+    padding-right: 0;
+  }
+  .medical-second-img img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px 0 0 10px;
+  }
+  .medical-second-content {
+    width: 100%;
+    padding-left: 10px;
+  }
+  .medical-third {
+    background-color: #40c7d6;
+    padding: 10px;
+    h2 {
+      margin: 0;
+      font-size: 28px;
+    }
+    p {
+      margin: 0;
+      font-size: 14px;
+      letter-spacing: 0.6px;
+      line-height: 1.3rem;
+    }
+  }
+  .medical-third-table {
+    padding-left: 15px;
+    padding-right: 0;
+    letter-spacing: 0.6px;
+    line-height: 2.5rem;
+  }
+  .medical-fourth {
+    padding: 10px;
+    background-color: #000000;
+    h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+    p {
+      margin: 0;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      line-height: 1.3rem;
+    }
+  }
+  .medical-fourth-table {
+    padding-left: 15px;
+    padding-right: 0;
+    letter-spacing: 0.6px;
+    line-height: 2.5rem;
+  }
+  .medical-fifth ul {
+    padding-left: 0;
+  }
+  .medical-fifth {
+    padding: 15px;
+    h2 {
+      margin: 0;
+      font-size: 26px;
+    }
+    p {
+      font-size: 14px;
+      letter-spacing: 0.8px;
+      line-height: 1.5rem;
+    }
+    ul {
+      padding-top: 15px;
+      padding-left: 15px;
+      padding-bottom: 20px;
+      h3 {
+        margin: 0;
+        font-size: 20px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+  .medical-sixth {
+    padding: 15px;
+    h2 {
+      margin: 0;
+      font-size: 22px;
+    }
+    p {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-size: 14px;
+      letter-spacing: 0.8px;
+      line-height: 1.2rem;
+    }
+  }
+}

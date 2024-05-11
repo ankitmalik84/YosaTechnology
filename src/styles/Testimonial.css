@@ -1,0 +1,121 @@
+.testimonialHeader {
+  font-size: 2.8rem;
+  height: 260px;
+  margin-bottom: 10.8rem;
+  text-align: center;
+  font-family: "Rubik";
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  background-image: url("../Assets/testimonial.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.testimonialHeader h1 {
+  color: #ffffff;
+  justify-content: center;
+  padding-top: 90px;
+}
+.testimonialHeader h2 {
+  font-size: 1.8rem;
+  justify-content: center;
+}
+.dotted-line {
+  /* position: absolute; */
+  width: 750px;
+  height: 25px; /* Adjust height as needed */
+  border-bottom: 3px dotted #9d2553; /* Add dotted border */
+  margin: 10px auto; /* Center the line */
+}
+.review-below {
+  margin-top: 0px;
+  display: flex;
+}
+.review-below-left {
+  width: 60%;
+  padding: 10px;
+  font-family: "Rubik";
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 42px;
+}
+h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 25px;
+}
+.details {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.details-content {
+  padding: 10px;
+  font-size: 1.8rem;
+  color: #9d2553;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-decoration: none;
+  display: flex;
+  gap: 15px;
+}
+.details-content > a {
+  font-size: 1.5rem;
+  color: #9d2553;
+  text-decoration: none;
+}
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .testimonialHeader {
+    font-size: 1.4rem;
+    height: 160px;
+    margin-bottom: 12.8rem;
+  }
+  .testimonialHeader h1 {
+    padding-top: 60px;
+  }
+  .testimonialHeader h2 {
+    font-size: 0.9rem;
+    justify-content: center;
+  }
+  .dotted-line {
+    width: 280px;
+  }
+  .review-below {
+    margin-top: 0px;
+    flex-direction: column;
+  }
+  .review-below-left {
+    width: 100%;
+    padding: 8px;
+    font-family: "Rubik";
+  }
+  h1 {
+    font-size: 2rem;
+    margin-top: 12px;
+  }
+  h2 {
+    font-size: 1.7rem;
+    margin-top: 18px;
+  }
+  .details {
+    padding-top: 30px;
+    gap: 10px;
+  }
+  .details-content {
+    padding: 10px;
+    font-size: 1.7rem;
+    color: #9d2553;
+    font-weight: bold;
+    margin-bottom: 8px;
+    gap: 12px;
+  }
+  .details-content > a {
+    font-size: 1.3rem;
+    color: #9d2553;
+    text-decoration: none;
+  }
+}

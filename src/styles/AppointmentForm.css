@@ -1,0 +1,82 @@
+.form-container {
+  padding: 32px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 40px;
+  background: linear-gradient(to right, #ecf2ff, #fbfcff);
+}
+.form-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+.form-title > span {
+  position: relative;
+}
+.form-title span::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 4px;
+  background-color: #9d2553;
+  border-radius: 8px;
+  left: 0;
+  bottom: -12px;
+}
+/* Form */
+.formSide {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background: linear-gradient(to right, #ecf2ff, #fbfcff);
+}
+
+.contact {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ContactForm,
+.formSide {
+  width: 100%; /* Adjust the width as needed */
+}
+
+/* Success Message */
+.success-message {
+  margin: 20px 0 0 0;
+  color: green;
+  font-family: "Rubik", sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.7px;
+  line-height: 1.7rem;
+}
+/* Error Message */
+.error-message {
+  color: red;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  line-height: 1.7rem;
+}
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .success-message {
+    margin: 12px 0 0 0;
+    font-size: 18px;
+  }
+  .contact {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .formSide,
+  .ContactForm {
+    width: 100%;
+  }
+}

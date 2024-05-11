@@ -18,34 +18,17 @@ import {
 
 export const navLinks = [
   {
-    id: "home",
+    id: "",
     title: "Home",
     sublinks: [],
   },
   {
-    id: "why-choose-us",
-    title: "Why Choose Us",
-    sublinks: [
-      {
-        id: "aboutus",
-        title: "About Us",
-      },
-      {
-        id: "testimonials",
-        title: "Testimonials",
-      },
-      {
-        id: "privacy",
-        title: "Privacy",
-      },
-      {
-        id: "articles",
-        title: "Articles",
-      },
-    ],
+    id: "aboutPage",
+    title: "About Us",
+    sublinks: [],
   },
   {
-    id: "services",
+    id: "",
     title: "Services",
     sublinks: [
       {
@@ -53,22 +36,22 @@ export const navLinks = [
         title: "YosaTechnology Solutions",
       },
       {
-        id: "medicaltranscription",
-        title: "Medical Transcription Service",
+        id: "transcription",
+        title: "Transcription Service",
       },
       {
         id: "medicalbilling",
-        title: "Medical Billing and Coding",
+        title: "Billing and Coding",
       },
     ],
   },
   {
-    id: "contactus",
+    id: "contactPage",
     title: "Contact Us",
     sublinks: [],
   },
   {
-    id: "faq",
+    id: "faqs",
     title: "FAQs",
     sublinks: [],
   },
@@ -152,64 +135,64 @@ export const footerLinks = [
     links: [
       {
         name: "Yosa Technology Solutions",
-        link: "",
+        link: "/",
       },
       {
-        name: "Medical Transcription Services",
-        link: "",
+        name: "Transcription Services",
+        link: "/transcription",
       },
       {
-        name: "Medical Billing & Coding",
-        link: "",
+        name: "Billing & Coding",
+        link: "/medicalbilling",
       },
       {
         name: "About Us",
-        link: "",
+        link: "/aboutPage",
       },
       {
-        name: "Privacy Policy",
-        link: "",
+        name: "Faqs",
+        link: "faqs",
       },
     ],
   },
-  {
-    title: "India Office",
-    links: [
-      {
-        name: "402, Piramyd Icon",
-        link: "",
-      },
-      {
-        name: "Shreeji Nagri Rd/Ugat Rd",
-        link: "",
-      },
-      {
-        name: "Jakeriya Circle LP Savani, Rd to",
-        link: "",
-      },
-      {
-        name: "Jahangirabad, Palanpur Jakatnaka",
-        link: "",
-      },
-      {
-        name: "Surat, Gujarat 395005",
-        link: "",
-      },
-    ],
-  },
-  {
-    title: "Talk To Us",
-    links: [
-      {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
-      },
-      {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
-      },
-    ],
-  },
+  // {
+  //   title: "India Office",
+  //   links: [
+  //     {
+  //       name: "402, Piramyd Icon",
+  //       link: "",
+  //     },
+  //     {
+  //       name: "Shreeji Nagri Rd/Ugat Rd",
+  //       link: "",
+  //     },
+  //     {
+  //       name: "Jakeriya Circle LP Savani, Rd to",
+  //       link: "",
+  //     },
+  //     {
+  //       name: "Jahangirabad, Palanpur Jakatnaka",
+  //       link: "",
+  //     },
+  //     {
+  //       name: "Surat, Gujarat 395005",
+  //       link: "",
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: "Talk To Us",
+  //   links: [
+  //     {
+  //       name: "Our Partner",
+  //       link: "https://www.hoobank.com/our-partner/",
+  //     },
+  //     {
+  //       name: "Become a Partner",
+  //       link: "https://www.hoobank.com/become-a-partner/",
+  //     },
+  //   ],
+  // },
 ];
 
 export const socialMedia = [

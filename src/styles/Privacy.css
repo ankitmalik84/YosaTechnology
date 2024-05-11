@@ -1,0 +1,47 @@
+.privacy {
+  background-color: #f5f5f5;
+  padding: 4rem;
+}
+.main-privacy {
+  border: 2px solid #1e8ffd;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  padding: 3rem;
+  background-color: #ffffff;
+}
+.privacy h1 {
+  font-size: 2.5rem;
+  margin-top: -22px;
+}
+.privacy h2 {
+  font-size: 1.5rem;
+}
+.privacy p {
+  line-height: 1.5;
+  margin-left: 1rem;
+}
+.privacy ul {
+  margin-left: 2rem;
+}
+@media screen and (max-width: 700px) {
+  .privacy {
+    padding: 0.5rem;
+  }
+  .main-privacy {
+    padding: 1rem;
+  }
+  .privacy h1 {
+    font-size: 1.9rem;
+    margin-top: -2px;
+    line-height: 42px;
+  }
+  .privacy h2 {
+    font-size: 1.4rem;
+  }
+  .privacy p {
+    margin-left: 0.5rem;
+  }
+  .privacy ul {
+    margin-left: 1.3rem;
+  }
+}

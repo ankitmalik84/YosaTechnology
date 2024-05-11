@@ -27,7 +27,7 @@ const Navbar = () => {
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onMouseEnter={() => setHovered(nav.title)}
           >
-            <Link to={`${nav.id}`}>{nav.title}</Link>
+            <a href={`/${nav.id}`}>{nav.title}</a>
             {hovered === nav.title && nav.sublinks.length > 0 && (
               <div
                 className={`absolute top-full ${
@@ -43,7 +43,7 @@ const Navbar = () => {
                       className={` font-poppins font-medium cursor-pointer text-[18px] text-white`}
                       onClick={() => setActive(item.title)}
                     >
-                      <a href={`#${item.id}`}>{item.title}</a>
+                      <a href={`/${item.id}`}>{item.title}</a>
                     </li>
                   ))}
                 </ul>

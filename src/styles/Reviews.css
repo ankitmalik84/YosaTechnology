@@ -1,0 +1,267 @@
+.review-section {
+  padding: 32px;
+  padding-top: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 110px;
+  gap: 24px;
+  background: linear-gradient(to right, #ecf2ff, #fbfcff);
+}
+/* Text */
+.rw-text-content {
+  width: 100%;
+}
+.rw-text-title {
+  margin: 16px 0;
+  color: #6f7074;
+  font-family: "Rubik", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+}
+.rw-text-num {
+  color: #178bff;
+}
+.rw-text-desc {
+  margin: 16px 0;
+  color: black;
+  font-family: "Rubik", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  line-height: 2.6rem;
+}
+.rw-text-format {
+  margin: 64px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.rw-text-quote1 {
+  position: absolute;
+  top: -18px;
+  left: -24px;
+  color: #178bff;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.rw-text-quote2 {
+  position: absolute;
+  right: -18px;
+  bottom: -24px;
+  color: #178bff;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.rw-review {
+  display: block;
+  margin: 0 0 0 8px;
+  color: black;
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.7px;
+  line-height: 2.2rem;
+}
+.rw-authors {
+  margin: 0 0 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.rw-reviewer-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+}
+.rw-reviewer-place {
+  margin: 6px 0 0 0;
+  color: #6f7074;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+}
+/* Buttons */
+.rw-next-btn {
+  margin: 0 24px 0 0;
+  color: black;
+  border: 1px solid transparent;
+  background-color: transparent;
+  outline: transparent;
+  font-size: 48px;
+  cursor: pointer;
+}
+.rw-next-btn:hover {
+  color: #178bff;
+}
+/* Responsive */
+@media screen and (max-width: 700px) {
+  .review-section {
+    letter-spacing: 0.8px;
+  }
+  .rw-text-title {
+    font-size: 22px;
+  }
+  .rw-text-desc {
+    font-size: 28px;
+  }
+  .rw-review {
+    font-size: 22px;
+    letter-spacing: 0.7px;
+    line-height: 1.8rem;
+  }
+  .rw-reviewer-name {
+    font-size: 20px;
+  }
+  .rw-next-btn {
+    margin: 0 16px 0 0;
+    font-size: 40px;
+  }
+}
+/* ShortNote */
+.shortNote {
+  position: absolute;
+  width: 85%;
+  transform: translateY(-190%);
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  z-index: 1;
+  border: 2px solid #178bff;
+  padding: 8px 16px;
+  background-color: white;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.shortNote .content {
+  z-index: 2;
+}
+.shortNote h2 {
+  margin: 0;
+  color: #178bff;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.shortNote::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(
+    180deg,
+    rgb(0, 183, 255),
+    rgb(255, 48, 255)
+  );
+  height: 1100%;
+  animation: rotBGimg 4s linear infinite;
+  transition: all 1s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.shortNote::after {
+  content: "";
+  position: absolute;
+  background: #ffffff;
+  inset: 5px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .shortNote {
+    transform: translateY(-210%);
+  }
+  .review-section {
+    margin-top: 210px;
+  }
+}
+@media screen and (max-width: 1168px) {
+  .shortNote {
+    transform: translateY(-160%);
+  }
+  .review-section {
+    margin-top: 280px;
+  }
+  .shortNote::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(
+      180deg,
+      rgb(0, 183, 255),
+      rgb(255, 48, 255)
+    );
+    height: 600%;
+    animation: rotBGimg 4s linear infinite;
+    transition: all 1.5s linear;
+  }
+}
+@media screen and (max-width: 720px) {
+  .shortNote {
+    width: 90%;
+    transform: translateY(-200%);
+    font-size: 12px;
+  }
+  .review-section {
+    margin-top: 210px;
+  }
+  .shortNote h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .rw-text-desc {
+    letter-spacing: 0.5px;
+    line-height: 2.1rem;
+  }
+  .rw-review {
+    letter-spacing: 0.9px;
+  }
+  .shortNote {
+    width: 92%;
+    transform: translateY(-250%);
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+  .review-section {
+    margin-top: 180px;
+  }
+  .shortNote::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(
+      180deg,
+      rgb(0, 183, 255),
+      rgb(255, 48, 255)
+    );
+    height: 190%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.8s linear;
+  }
+}

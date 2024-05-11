@@ -35,15 +35,55 @@ const Footer = () => (
                     index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
                   }`}
                 >
-                  {link.name}
+                  {/* {link.name} */}
+                  <a href={`${link.link}`}>{link.name}</a>
                 </li>
               ))}
             </ul>
           </div>
         ))}
+        <div className={`flex flex-col ss:my-0 my-4 min-w-[150px]`}>
+          <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white">
+            India Office
+          </h4>
+          <ul className="list-none mt-4">
+            <li className="font-poppins font-normal text-[16px] leading-[26px] text-dimWhite mb-2">
+              402, Piramyd Icon
+            </li>
+            <li className="font-poppins font-normal text-[16px] leading-[32px] text-dimWhite mb-2">
+              Shreeji Nagri Rd/Ugat Rd
+            </li>
+            <li className="font-poppins font-normal text-[16px] leading-[32px] text-dimWhite mb-2">
+              Jakeriya Circle LP Savani, Rd to
+            </li>
+            <li className="font-poppins font-normal text-[16px] leading-[32px] text-dimWhite mb-2">
+              Jahangirabad, Palanpur Jakatnaka
+            </li>
+            <li className="font-poppins font-normal text-[16px] leading-[32px] text-dimWhite mb-2">
+              Surat, Gujarat 395005
+            </li>
+          </ul>
+        </div>
+        <div className={`flex flex-col ss:my-0 my-4 min-w-[150px]`}>
+          <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white">
+            know More
+          </h4>
+          <ul className="list-none mt-4">
+            <li className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
+              <a href="mailto:Hr@yosatechnology.com">Hr@yosatechnology.com</a>
+            </li>
+            <li className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
+              <a href="mailto:Info@yosatechnology.com">
+                Info@yosatechnology.com
+              </a>
+            </li>
+            <li className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
+              <a href="tel:8650029851">8650029851</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-
     <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
       <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">
         Copyright Ⓒ 2024 Yosa Technology. All Rights Reserved.
