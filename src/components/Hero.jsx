@@ -45,8 +45,8 @@ const Hero = () => {
           business services and laboratory revenue cycle management.
         </p>
         <div className="flex gap-4">
-          <Button styles={`mt-2`} text={`Our Services`} link={``} />
-          <Button styles={`mt-2`} text={`Contact Us`} link={``} />
+          <Button styles={`mt-2`} text={`Our Services`} link={`/solutions`} />
+          <Button styles={`mt-2`} text={`Contact Us`} link={`/contactPage`} />
         </div>
       </div>
 

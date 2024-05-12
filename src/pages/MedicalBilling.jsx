@@ -1,5 +1,4 @@
 import React from "react";
-import img1 from "../assets/md1.png";
 import img2 from "../assets/md2.png";
 import "../styles/MedicalBilling.css";
 const MedicalBilling = () => {

@@ -10,22 +10,21 @@ const FAQs = () => {
           data-aos-easing="ease-in-out"
           className="text-gradient font-bold text-[45px]"
         >
-          FAQs on Outsourcing Healthcare BPO to India
+          FAQs on Outsourcing BPO to India
         </h1>
         <p
           data-aos="zoom"
           data-aos-duration="500"
           data-aos-easing="ease-in-out"
         >
-          Are you looking to outsource healthcare BPO and have no clue how to go
-          about it? Here are some of the frequently asked questions by our
-          customers while outsourcing their healthcare BPO services to us –
+          Are you looking to outsource BPO and have no clue how to go about it?
+          Here are some of the frequently asked questions by our customers while
+          outsourcing their healthcare BPO services to us –
         </p>
         <ol>
           <li>
             <h2 className="pt-2">
-              I want to outsource healthcare BPO to YosaTechnology. How do I
-              start?
+              I want to outsource BPO to YosaTechnology. How do I start?
             </h2>
           </li>
           <p
@@ -91,17 +90,15 @@ const FAQs = () => {
             client.
           </p>
           <li>
-            <h2>
-              For how long has YosaTechnology been outsourcing Healthcare BPO?
-            </h2>
+            <h2>For how long has YosaTechnology been outsourcing BPO?</h2>
           </li>
           <p
             data-aos="zoom"
             data-aos-duration="500"
             data-aos-easing="ease-in-out"
           >
-            YosaTechnology has been providing healthcare services for more than
-            16 years now.
+            YosaTechnology has been providing services for more than 16 years
+            now.
           </p>
           <li>
             <h2>What type of customers do you serve?</h2>
@@ -444,7 +441,7 @@ const FAQs = () => {
           </p>
           <li>
             <h2>
-              Why should I choose Clincs4Health Solutions to outsource
+              Why should I choose YosaTechnology Solutions to outsource
               healthcare BPO services?
             </h2>
           </li>
@@ -453,7 +450,7 @@ const FAQs = () => {
             data-aos-duration="500"
             data-aos-easing="ease-in-out"
           >
-            Partnering with Clincs4Health Solutions comes with a range of
+            Partnering with YosaTechnology Solutions comes with a range of
             benefits:
           </p>
           <ul>

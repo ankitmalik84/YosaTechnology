@@ -1,6 +1,4 @@
 import styles from "../style";
-import Button from "./Button";
-import Countdown from "./Countdown";
 
 const Timer = () => (
   <section

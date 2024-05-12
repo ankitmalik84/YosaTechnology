@@ -9,7 +9,6 @@ import {
   Faq,
   MedicalBilling,
   Transcription,
-  Privacy,
   Solutions,
   Testimonial,
 } from "./pages";
@@ -30,7 +29,6 @@ const App = () => {
           <Route path="/contactPage" element={<ContactPage />} />
           <Route path="/testimonials" element={<Testimonial />} />
           <Route path="/solutions" element={<Solutions />} />
-          <Route path="/privacy" element={<Privacy />} />
           <Route path="/faqs" element={<Faq />} />
           <Route path="/transcription" element={<Transcription />} />
           <Route path="/medicalbilling" element={<MedicalBilling />} />

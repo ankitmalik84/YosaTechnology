@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { close, logo, menu } from "../assets";
+import { close, menu } from "../assets";
 import { navLinks } from "../constants";
 import { Link } from "react-scroll";
-
 const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
@@ -15,8 +14,9 @@ const Navbar = () => {
       data-aos-duration="500"
       data-aos-easing="ease-in-out"
     >
-      <img src={logo} alt="yosatechnology" className="w-[194px] h-[40px]" />
-      <h1>Yosa Technology</h1>
+      <h1 className="text-gradient font-extrabold font- text-[32px] font-poppins ">
+        <a href="/">Yosa Technology</a>
+      </h1>
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
@@ -26,6 +26,7 @@ const Navbar = () => {
               active === nav.title ? "text-white" : "text-dimWhite"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onMouseEnter={() => setHovered(nav.title)}
+            onClick={() => setActive(nav.title)}
           >
             <a href={`/${nav.id}`}>{nav.title}</a>
             {hovered === nav.title && nav.sublinks.length > 0 && (
@@ -75,7 +76,7 @@ const Navbar = () => {
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >
-                <a href={`#${nav.id}`}>{nav.title}</a>
+                <a href={`/${nav.id}`}>{nav.title}</a>
               </li>
             ))}
           </ul>

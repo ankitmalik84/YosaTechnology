@@ -6,7 +6,7 @@ const Button = ({ styles, text, link }) => (
     data-aos-duration="500"
     data-aos-easing="ease-in-out"
     href={link}
-    target="_blank"
+    // target="_blank"
     type="button"
     className={`py-3 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none ${styles} shadow-md shadow-sky-500 `}
   >

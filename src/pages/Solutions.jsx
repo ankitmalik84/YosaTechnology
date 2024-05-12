@@ -1,13 +1,9 @@
 import React from "react";
 import Faqs from "../components/Faqs";
-// import solution from "../assets/solutions.png";
 import "../styles/Solutions.css";
 const Solutions = () => {
   return (
     <div className="faq-main text-white bg-black">
-      {/* <div className="sol-image">
-        <img src={solution} alt="solution" />
-      </div> */}
       <div className="faq-container">
         <Faqs />
       </div>

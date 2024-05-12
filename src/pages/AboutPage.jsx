@@ -157,10 +157,6 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      {/* <About /> */}
-      {/* <div className="ab-fourth">
-        <Members />
-      </div> */}
       <div className="ab-fifth">
         <Coursel />
       </div>

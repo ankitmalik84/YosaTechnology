@@ -21,7 +21,7 @@ const Services = () => {
   return (
     <>
       <h1
-        className="text-gradient flex-1 font-poppins font-semibold ss:text-[45px] text-[36px] text-white ss:leading-[20.8px] leading-[75px] text-center sm:text-left flex items-center justify-center p-5 mt-8"
+        className="text-gradient flex-1 font-poppins font-semibold ss:text-[45px] text-[36px] text-white ss:leading-[50.8px] leading-[75px] text-center sm:text-left flex items-center justify-center p-5 mt-8"
         data-aos="zoom-in"
         data-aos-duration="500"
         data-aos-easing="ease-in-out"

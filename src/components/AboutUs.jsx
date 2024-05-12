@@ -32,7 +32,7 @@ const AboutUs = () => (
         Why Choose
         <br className="sm:block hidden" />{" "}
         <span
-          className="text-gradient"
+          className="text-gradient font-extrabold"
           data-aos="zoom-in"
           data-aos-duration="500"
           data-aos-easing="ease-in-out"

@@ -1,6 +1,6 @@
 import styles from "../style";
 import { logo2 } from "../assets";
-import { footerLinks, socialMedia } from "../constants";
+import { footerLinks } from "../constants";
 
 const Footer = () => (
   <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
@@ -78,7 +78,7 @@ const Footer = () => (
               </a>
             </li>
             <li className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
-              <a href="tel:8650029851">8650029851</a>
+              <a href="tel:+91 8650029851">+91 8650029851</a>
             </li>
           </ul>
         </div>
@@ -88,20 +88,6 @@ const Footer = () => (
       <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">
         Copyright Ⓒ 2024 Yosa Technology. All Rights Reserved.
       </p>
-
-      <div className="flex flex-row md:mt-0 mt-6">
-        {socialMedia.map((social, index) => (
-          <img
-            key={social.id}
-            src={social.icon}
-            alt={social.id}
-            className={`w-[21px] h-[21px] object-contain cursor-pointer ${
-              index !== socialMedia.length - 1 ? "mr-6" : "mr-0"
-            }`}
-            onClick={() => window.open(social.link)}
-          />
-        ))}
-      </div>
     </div>
   </section>
 );
