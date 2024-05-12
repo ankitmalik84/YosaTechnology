@@ -1,11 +1,18 @@
 import { useState } from "react";
 import { close, menu } from "../assets";
 import { navLinks } from "../constants";
-import { Link } from "react-scroll";
+import { Link, useLocation } from "react-router-dom";
+
 const Navbar = () => {
-  const [active, setActive] = useState("Home");
+  const location = useLocation();
+  const [active, setActive] = useState(getActiveTab(location.pathname));
   const [toggle, setToggle] = useState(false);
   const [hovered, setHovered] = useState(null);
+
+  function getActiveTab(pathname) {
+    const activeTab = navLinks.find((nav) => `/${nav.id}` === pathname);
+    return activeTab ? activeTab.title : "Home";
+  }
 
   return (
     <nav
@@ -15,7 +22,7 @@ const Navbar = () => {
       data-aos-easing="ease-in-out"
     >
       <h1 className="text-gradient font-extrabold font- text-[32px] font-poppins ">
-        <a href="/">Yosa Technology</a>
+        <Link to="/">Yosa Technology</Link>{" "}
       </h1>
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
@@ -28,7 +35,7 @@ const Navbar = () => {
             onMouseEnter={() => setHovered(nav.title)}
             onClick={() => setActive(nav.title)}
           >
-            <a href={`/${nav.id}`}>{nav.title}</a>
+            <Link to={`/${nav.id}`}>{nav.title}</Link>{" "}
             {hovered === nav.title && nav.sublinks.length > 0 && (
               <div
                 className={`absolute top-full ${
@@ -44,7 +51,7 @@ const Navbar = () => {
                       className={` font-poppins font-medium cursor-pointer text-[18px] text-white`}
                       onClick={() => setActive(item.title)}
                     >
-                      <a href={`/${item.id}`}>{item.title}</a>
+                      <Link to={`/${item.id}`}>{item.title}</Link>{" "}
                     </li>
                   ))}
                 </ul>
@@ -76,7 +83,7 @@ const Navbar = () => {
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >
-                <a href={`/${nav.id}`}>{nav.title}</a>
+                <Link to={`/${nav.id}`}>{nav.title}</Link>{" "}
               </li>
             ))}
           </ul>
