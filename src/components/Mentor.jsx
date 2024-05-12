@@ -32,7 +32,7 @@ const Mentor = () => {
             Meet Our Leadership Team
           </span>
         </h1>
-        <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid gap-8 lg:gap-16 sm:grid-cols-1">
           {teamData.map((member) => (
             <div
               data-aos="zoom-in"
